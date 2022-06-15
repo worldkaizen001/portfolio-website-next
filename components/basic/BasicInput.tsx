@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function BasicInput(props) {
+export default function BasicInput(props: any) {
   return (
     <div
-      className={`${props.className} flex align-center p-4 border border-[#BCBCBC] rounded-lg `}
+      className={`${props.className} flex align-center p-4 border-[#BCBCBC]`}
     >
       <span>{props.startIcon}</span>
       <input

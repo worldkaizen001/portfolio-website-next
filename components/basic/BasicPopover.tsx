@@ -1,11 +1,11 @@
-import { Popover, Transition } from "@headlessui/react";
-import { Fragment } from "react";
+// import { Popover, Transition } from "@headlessui/react";
+// import { Fragment } from "react";
 
-export default function BasicPopover(props) {
+export default function BasicPopover(props: any) {
   return (
     <div className={`w-full px-4 ${props.className}`}>
-      <Popover className={` ${props.popoverStyles} relative`}>
-        {({ open }) => (
+      {/* <Popover className={` ${props.popoverStyles} relative`}>
+        {({ open }: any) => (
           <div>
             <Popover.Button
               className={` ${props.btnStyles}
@@ -31,7 +31,7 @@ export default function BasicPopover(props) {
             </Transition>
           </div>
         )}
-      </Popover>
+      </Popover> */}
     </div>
   );
 }

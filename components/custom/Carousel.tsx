@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import { BsArrowLeftSquare, BsArrowRightSquare } from "react-icons/bs";
 
-export default function Carousel(props) {
-  const ref = useRef();
+export default function Carousel(props: any) {
+  const ref = useRef<any>();
 
   const scrollLeft = () => {
     ref.current.scrollLeft += -props.scrollWidth;

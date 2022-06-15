@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function BasicTextarea(props) {
+export default function BasicTextarea(props: any) {
   return (
     <textarea
       cols={props.cols}

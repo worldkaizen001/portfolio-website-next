@@ -2,7 +2,10 @@ import React from "react";
 
 export default function Skills() {
   return (
-    <section className="skills bg-[#F4F4F4] py-[2.5rem] sm:py-[3.8rem] lg:py-[5.7rem]">
+    <section
+      id="skills"
+      className="skills bg-[#F4F4F4] py-[2.5rem] sm:py-[3.8rem] lg:py-[5.7rem]"
+    >
       <div className="container grid grid-cols-12 gap-[2rem] sm:gap-[2.8rem] lg:gap-[3.8rem] xl:gap-[4.5rem]">
         <div className="col-span-4 lg:col-span-3 text-[1.8rem] 2xs:text-[2.2rem] sm:text-[2.8rem] md:text-[3.4rem] xl:text-[5rem] opacity-50 self-center">
           Skills

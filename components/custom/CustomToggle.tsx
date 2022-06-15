@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-export default function CustomToggle(props) {
+export default function CustomToggle(props: any) {
   const { data, toggle, className } = props;
 
   return (

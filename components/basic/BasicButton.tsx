@@ -12,7 +12,7 @@ export default function BasicButton({
   fontWeight,
   onMouseEnter,
   onMouseLeave,
-}) {
+}: any) {
   return (
     <button
       className={`bg-${bgColor} text-${textColor} text-${fontSize} p-${padding} rounded-${radius} font-${fontWeight} ${className}`}

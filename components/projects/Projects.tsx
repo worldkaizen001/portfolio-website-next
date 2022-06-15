@@ -2,7 +2,10 @@ import React from "react";
 
 export default function Projects() {
   return (
-    <section className="projects text-[#ffffff] bg-[#070707] pt-[3.3rem] 2xs:pt-[4.4rem] sm:pt-[5.5rem] md:pt-[6.6rem] xl:pt-[7.7rem] 2xs:pb-[7.8rem] sm:pb-[10.8rem] xl:pb-[13.7rem]">
+    <section
+      id="projects"
+      className="projects text-[#ffffff] bg-[#070707] pt-[3.3rem] 2xs:pt-[4.4rem] sm:pt-[5.5rem] md:pt-[6.6rem] xl:pt-[7.7rem] 2xs:pb-[7.8rem] sm:pb-[10.8rem] xl:pb-[13.7rem]"
+    >
       <div className="container ">
         <div className="text-[1.45rem] 2xs:text-[1.6rem] xl:text-[1.8rem] pt-[.3rem] pb-[1.4rem]  font-normal border-b border-white ">
           Projects *

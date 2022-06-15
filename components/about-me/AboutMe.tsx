@@ -2,7 +2,10 @@ import React from "react";
 
 export default function AboutMe() {
   return (
-    <section className="about-me bg-[#F4F4F4] pt-[3.3rem] pb-[6rem] 2xs:pt-[3.7rem] 2xs:pb-[9rem] sm:pt-[5rem] sm:pb-[12rem] md:pt-[8rem] md:pb-[15rem] xl:pt-[10.2rem] xl:pb-[18rem]">
+    <section
+      id="about"
+      className="about-me bg-[#F4F4F4] pt-[3.3rem] pb-[6rem] 2xs:pt-[3.7rem] 2xs:pb-[9rem] sm:pt-[5rem] sm:pb-[12rem] md:pt-[8rem] md:pb-[15rem] xl:pt-[10.2rem] xl:pb-[18rem]"
+    >
       <div className="container grid grid-cols-12 2xs:gap-[2.2rem] xl:gap-[6.2rem]">
         <div className="col-span-12 xl:col-span-8">
           <div className="mb-[1rem] text-[1.6rem] 2xs:text-[2.2rem] sm:text-[2.8rem] md:text-[3.4rem] xl:text-[5rem] opacity-40 font-light">
