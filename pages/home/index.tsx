@@ -11,12 +11,11 @@ import CollabModal from "../../components/collaborate/CollabModal";
 
 const Home: NextPage = () => {
   const { display } = useContext(AppContext);
-
   return (
     <div
       className={`h-screen w-screen ${
         (display.navMenu === true || display.modal === true) &&
-        `cursor-none overflow-y-hidden`
+        `overflow-y-hidden`
       }`}
     >
       <Head>

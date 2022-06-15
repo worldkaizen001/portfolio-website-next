@@ -1,4 +1,5 @@
 import React from "react";
+import { about } from "../constants/about";
 
 export default function AboutMe() {
   return (
@@ -12,13 +13,7 @@ export default function AboutMe() {
             About me
           </div>
           <div className="text-[1rem] 2xs:text-[1.2rem] sm:text-[1.4rem] md:text-[1.6rem] xl:text-[1.8rem] leading-[207%] font-medium ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            {about}
           </div>
         </div>
         <div className="col-span-12 xl:col-span-4 z-10">

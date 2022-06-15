@@ -1,7 +1,13 @@
 import Image from "next/image";
-import React from "react";
+import { useRouter } from "next/router";
+import React, { useContext } from "react";
+import { SocialMediaLinks } from "../constants/socialMediaLinks";
+import { AppContext } from "../hooks/AppContext.hook";
 
 export default function Footer() {
+  const navigate = useRouter();
+  const { display, setDisplay } = useContext(AppContext);
+
   return (
     <footer
       id="contacts"
@@ -13,7 +19,10 @@ export default function Footer() {
             Back to Top
           </div>
 
-          <div className="relative flex justify-center h-[6rem] 2xs:h-[6.4rem] xl:h-[9.5rem]">
+          <div
+            onClick={() => window.scrollTo(0, 0)}
+            className="relative flex justify-center h-[6rem] 2xs:h-[6.4rem] xl:h-[9.5rem]"
+          >
             <Image
               className="w-full h-full object-contain"
               src={"/Lineup.svg"}
@@ -27,6 +36,10 @@ export default function Footer() {
             {" Let's Talk"}
           </div>
           <button
+            onClick={() => {
+              setDisplay({ ...display, navMenu: false, modal: true });
+              navigate.push("/home#colaborate");
+            }}
             className={
               "px-[1.9rem] py-[.95rem] text-[.95rem] 2xs:text-[1.15rem] sm:text-[1.28rem] md:text-[1.4rem] xl:text-[1.5rem] rounded-[8px] border border-white !cursor-pointer "
             }
@@ -42,17 +55,34 @@ export default function Footer() {
             <div className="mb-[.65rem] xl:mb-[.2rem] opacity-50">
               Email Address
             </div>
-            <div className="  text-justify font-medium">
-              mayo16collins@gmail.com
-            </div>
+            <a
+              rel="noopener noreferrer"
+              href={`mailto:${SocialMediaLinks.Email}`}
+            >
+              <div className="  text-justify font-medium">
+                mayo16collins@gmail.com
+              </div>
+            </a>
           </div>
           <div className="col-span-4 mb-[2.3rem] xl:mb-0 2xs:text-[1.2rem] sm:text-[1.3rem] md:text-[1.4rem] xl:text-[1.5rem] font-medium">
             <div className="mb-[.65rem] xl:mb-[.2rem] opacity-50">GitHub</div>
-            <div className="  text-justify font-medium">alsoknownasac</div>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={SocialMediaLinks.Github}
+            >
+              <div className="  text-justify font-medium">alsoknownasac</div>
+            </a>
           </div>
           <div className="col-span-2 2xs:text-[1.2rem] sm:text-[1.3rem] md:text-[1.4rem] xl:text-[1.5rem] font-medium">
             <div className="mb-[.65rem] xl:mb-[.2rem] opacity-50">LinkedIn</div>
-            <div className="  text-justify font-medium">Collins Amayo</div>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={SocialMediaLinks.Linkedin}
+            >
+              <div className="  text-justify font-medium">Collins Amayo</div>
+            </a>
           </div>
         </div>
       </div>

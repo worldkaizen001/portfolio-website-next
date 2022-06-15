@@ -54,7 +54,7 @@ function SideBar({ display, setDisplay, url, navigate }: any) {
           e.stopPropagation();
           setDisplay({ ...display, navMenu: false });
         }}
-      ></div>
+      />
       <div className="z-[101] animate__animated animate__slideInDown menuBody p-[2rem] pb-[3.5rem] relative bg-[#F1F1F1] text-[#070707] rounded-lg">
         <div className=" px-[.8rem] py-[2.5rem] border-b border-[rgba(7,_7,_7,_0.39)] flex justify-between items-center ">
           <button

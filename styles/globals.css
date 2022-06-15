@@ -42,16 +42,19 @@ a {
   display: none;
 }
 
-.outer {
+.outer,
+.modal-body {
   -webkit-overflow-scrolling: touch;
 }
 
-.outer::-webkit-scrollbar {
+.outer::-webkit-scrollbar,
+.modal-body::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
   background: transparent; /* Optional: just make scrollbar invisible */
 }
 /* Optional: show position indicator in red */
-.outer::-webkit-scrollbar-thumb {
+.outer::-webkit-scrollbar-thumb,
+.modal-body::-webkit-scrollbar-thumb {
   background: transparent;
 }
 
@@ -187,4 +190,10 @@ a {
 .animate__slideOutRight {
   -webkit-animation-name: slideOutRight;
   animation-name: slideOutRight;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
