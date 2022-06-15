@@ -8,7 +8,7 @@ export default function NavMd() {
 
   return (
     <nav className="hidden pt-[6rem] pb-[3.85rem] border-b border-white xl:grid grid-cols-12 items-center text-white">
-      <div className="col-span-3 lg:text-[1.6rem] xl:text-[1.8rem] truncate">
+      <div className="col-span-3 lg:text-[1.6rem] xl:text-[1.8rem] truncate nav-icon">
         <Link href="/home" passHref={true}>
           <span>{`/*alsoknownaszac*/`}</span>
         </Link>
