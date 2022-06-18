@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import "tailwindcss/tailwind.css";
 import { useEffect, useMemo, useState } from "react";
 import { AppContext } from "../components/hooks/AppContext.hook";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [display, setDisplay] = useState({

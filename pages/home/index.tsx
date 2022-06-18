@@ -20,11 +20,6 @@ const Home: NextPage = () => {
     >
       <Head>
         <title>Amayo Collins Portfolio</title>
-        <meta
-          name="description"
-          content="A personal portolio website of a very confident and outgoing developer who has years of acheivements and experience under his belt who goes under the alias @alsoknownaszac"
-        />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <CollabModal />
       <HeroSection />
