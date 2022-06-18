@@ -13,7 +13,7 @@ export default function NavSm() {
 
   return (
     <nav className="xl:hidden pt-[5.7rem] pb-[2.9rem] border-b border-white flex justify-between items-center text-white">
-      <div className="text-[1.8rem] 2xs:text-[1.9rem] md:text-[2.2rem] nav-icon">
+      <div className="text-[2rem] 2xs:text-[2.1rem] md:text-[2.5rem] nav-icon">
         xxv
       </div>
       <div className="flex items-center">
@@ -93,7 +93,12 @@ function SideBar({ display, setDisplay, url, navigate }: any) {
                 key={index}
               >
                 <Link href={title.link} passHref={true}>
-                  <span className="focus:bg-[#e9626215]">{title.name}</span>
+                  <span
+                    onClick={() => setDisplay({ ...display, navMenu: false })}
+                    className="focus:bg-[#e9626215] block"
+                  >
+                    {title.name}
+                  </span>
                 </Link>
               </li>
             );

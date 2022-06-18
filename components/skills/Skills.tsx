@@ -15,10 +15,10 @@ export default function Skills() {
             Technical
           </div>
           <div className="text-[.9rem] 2xs:text-[1.1rem] sm:text-[1.3rem] md:text-[1.6rem] xl:text-[1.8rem] leading-[180%] font-medium">
-            Html 5 and CSS 3 | Bootstrap | MaterialUi | Git | Github | ReactJS |
-            React Hooks | React Query | JavaScript | Typescript | NextJS |
-            Tailwind CSS | GraphQl | GraphCMS | Rest API | Ajax | Axios | Yarn |
-            NodeJS
+            Html 5 ** CSS 3 ** Bootstrap ** MaterialUi ** Git ** Github **
+            ReactJS ** React Hooks ** React Query ** JavaScript ** Typescript **
+            NextJS ** Tailwind CSS ** GraphQl ** GraphCMS ** Rest API ** Ajax **
+            Axios ** Yarn ** NodeJS
           </div>
         </div>
         <div className="col-span-4 lg:hidden"></div>
@@ -27,8 +27,8 @@ export default function Skills() {
             Soft
           </div>
           <div className="text-[.9rem] 2xs:text-[1.1rem] sm:text-[1.3rem] md:text-[1.6rem] xl:text-[1.8rem] leading-[180%] font-medium">
-            ** Collaboration and Team work ** Ability to learn quick *Analytical
-            Skills ** Communication.
+            ** Collaboration and Team work ** Ability to learn quick **
+            Analytical Skills ** Communication.
           </div>
         </div>
       </div>

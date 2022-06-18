@@ -52,7 +52,7 @@ export default function HeroSection() {
           </h1>
         </section>
       </div>
-      <div className="bg-[url('/rectangle18.png')] hidden 3xs:block h-[14.9rem] w-[25.6rem] 2xs:h-[16.9rem] 2xs:w-[27.6rem] xs:h-[20.9rem] xs:w-[32rem] sm:h-[23rem] sm:w-[35rem] lg:h-[34.815rem] lg:w-[50.8rem] xl:h-[34.815rem] xl:w-[64.8rem] hero-img absolute top-[55%] right-[5%] xs:top-[50%] sm:top-[48.5%] md:top-[46%] sm:right-[8%] lg:top-[48.5%] lg:right-[19%] xl:top-[45%] xl:right-[18%] z-10 bg-fixed bg-center bg-no-repeat bg-cover " />
+      <div className="bg-[url('/officesetup.png')] hidden 3xs:block h-[14.9rem] w-[25.6rem] 2xs:h-[16.9rem] 2xs:w-[27.6rem] xs:h-[20.9rem] xs:w-[32rem] sm:h-[23rem] sm:w-[35rem] lg:h-[34.815rem] lg:w-[50.8rem] xl:h-[34.815rem] xl:w-[64.8rem] hero-img absolute top-[55%] right-[5%] xs:top-[50%] sm:top-[48.5%] md:top-[46%] sm:right-[8%] lg:top-[48.5%] lg:right-[19%] xl:top-[45%] xl:right-[18%] z-10 bg-fixed bg-center bg-no-repeat bg-cover " />
       <div className="absolute bottom-[11.5%] 2xs:bottom-[5.5%] sm:bottom-[7.5%] left-[10%] z-10 ">
         <div className=" relative flex justify-center h-[9rem] xs:h-[12rem] lg:h-[18.5rem] hero-img">
           <Image
