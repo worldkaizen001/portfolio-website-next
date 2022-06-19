@@ -17,7 +17,7 @@ export default function AboutMe() {
           </div>
         </div>
         <div className="col-span-12 xl:col-span-4 z-10">
-          <div className="bg-[url('/alsoknownaszac.jpg')] h-[10rem] w-[10rem] bg-cover 2xs:h-[15rem] 2xs:w-[15rem] sm:h-[18rem] sm:w-[18rem] md:h-[23em] md:w-[23rem] xl:h-[28rem] xl:w-[28rem] rounded-full mx-auto mt-[1.6rem] 2xs:mt-[1.8rem] sm:mt-[2rem] md:mt-[2.5rem]"></div>
+          <div className="bg-[url('/alsoknownaszac.avif')] h-[10rem] w-[10rem] bg-cover 2xs:h-[15rem] 2xs:w-[15rem] sm:h-[18rem] sm:w-[18rem] md:h-[23em] md:w-[23rem] xl:h-[28rem] xl:w-[28rem] rounded-full mx-auto mt-[1.6rem] 2xs:mt-[1.8rem] sm:mt-[2rem] md:mt-[2.5rem]"></div>
         </div>
       </div>
     </section>

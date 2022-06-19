@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer
       id="contacts"
-      className={`bg-[url('/blackbg2.svg')] min-h-[44.4rem] 2xs:min-h-[42.8rem] sm:min-h-[44.6rem] xl:min-h-[46.3rem] bg-fixed bg-center bg-no-repeat bg-cover text-white relative pt-[3rem] 2xs:pt-[3.8rem] sm:pt-[5rem] xl:pt-[6rem] pb-[5rem] 2xs:pb-[5.5rem] sm:pb-[6.4rem] xl:pb-[7.3rem]`}
+      className={`bg-[url('/blackbg2.avif')] min-h-[44.4rem] 2xs:min-h-[42.8rem] sm:min-h-[44.6rem] xl:min-h-[46.3rem] bg-fixed bg-center bg-no-repeat bg-cover text-white relative pt-[3rem] 2xs:pt-[3.8rem] sm:pt-[5rem] xl:pt-[6rem] pb-[5rem] 2xs:pb-[5.5rem] sm:pb-[6.4rem] xl:pb-[7.3rem]`}
     >
       <div className="container relative">
         <div className=" absolute bottom-0 xl:bottom-[48%] right-[6%] ">

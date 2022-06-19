@@ -10,7 +10,7 @@ const urlsToCache = ["index.html", "offline.html"];
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      console.log("Opened cache");
+      // console.log("Opened cache");
 
       return cache.addAll(urlsToCache);
     })
@@ -30,7 +30,7 @@ self.addEventListener("fetch", function (event) {
 // activate sw
 
 self.addEventListener("activate", function (event) {
-  console.log("Hello world from the Service Worker 🤙");
+  // console.log("Hello world from the Service Worker 🤙");
 });
 
 // Install SW
