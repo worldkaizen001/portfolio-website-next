@@ -11,12 +11,24 @@ export default function Document() {
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="preload"
-          href="/public/alsoknownaszac.avif"
+          href="https://alsoknownaszac.me/alsoknownaszac.avif"
           as="image"
         ></link>
-        <link rel="preload" href="/public/blackbg1.avif" as="image"></link>
-        <link rel="preload" href="/public/blackbg2.avif" as="image"></link>
-        <link rel="preload" href="/public/officestup.avif" as="image"></link>
+        <link
+          rel="preload"
+          href="https://alsoknownaszac.me/blackbg1.avif"
+          as="image"
+        ></link>
+        <link
+          rel="preload"
+          href="https://alsoknownaszac.me/blackbg2.avif"
+          as="image"
+        ></link>
+        <link
+          rel="preload"
+          href="https://alsoknownaszac.me/officestup.avif"
+          as="image"
+        ></link>
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
