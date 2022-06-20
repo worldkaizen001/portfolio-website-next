@@ -27,7 +27,7 @@ const Home: NextPage = () => {
 
   return (
     <div
-      className={`h-screen w-screen ${
+      className={`h-screen w-screen overflow-x-hidden ${
         (display.navMenu === true || display.modal === true) &&
         `overflow-y-hidden`
       }`}

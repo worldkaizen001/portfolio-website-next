@@ -51,7 +51,7 @@ export default function Document() {
         <link
           rel="search"
           type="application/opensearchdescription+xml"
-          title="Amayo Collins Portfolio"
+          title="Amayo Collins Portfoliow"
           href="http://alsoknownaszac.me/mysitetitle.xml"
         ></link>
       </Head>
