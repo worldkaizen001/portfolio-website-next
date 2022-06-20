@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <meta
           name="description"
-          content="A personal portolio website of a very confident and outgoing developer who has years of acheivements and experience under his belt who goes under the alias @alsoknownaszac"
+          content="A portolio website of an outgoing developer who goes under the alias @alsoknownaszac"
         />
         <link rel="icon" href="/favicon.ico" />
         <link
@@ -48,6 +48,12 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Offside&display=swap"
           rel="stylesheet"
         />
+        <link
+          rel="search"
+          type="application/opensearchdescription+xml"
+          title="Amayo Collins Portfolio"
+          href="http://alsoknownaszac.me/mysitetitle.xml"
+        ></link>
       </Head>
       <body>
         <Main />
