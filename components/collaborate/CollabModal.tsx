@@ -1,5 +1,5 @@
 import { NextRouter, useRouter } from "next/router";
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import BasicInput from "../basic/BasicInput";
 import { Modal, ModalBody } from "../basic/BasicModal";
 import { AppContext } from "../hooks/AppContext.hook";
@@ -11,6 +11,18 @@ export default function CollabModal() {
   const { display, setDisplay } = useContext(AppContext);
 
   const [error, setError] = useState(false);
+
+  const [seconds, setSeconds] = useState(0);
+  useEffect(() => {
+    let myInterval = setInterval(() => {
+      if (seconds > 0) {
+        setSeconds(seconds - 1);
+      }
+    }, 1000);
+    return () => {
+      clearInterval(myInterval);
+    };
+  });
 
   return (
     <Modal>
@@ -57,13 +69,16 @@ export default function CollabModal() {
           placeholder="Project Description"
         />
         <button
-          onClick={() => setError(true)}
+          onClick={() => {
+            setError(true);
+            setSeconds(5);
+          }}
           className={`ml-[.9rem] px-[1.4rem] py-[.7rem] rounded-[.5rem] text-[1.1rem] border border-[#070707] bg-[#D4D4D4] !cursor-pointer `}
         >
           Send Request
         </button>
-        {error && (
-          <div className="ml-4 mt-6 font-bold text-[1.4rem]">
+        {error && seconds > 0 && (
+          <div className="ml-4 mt-6 font-semibold text-[1.4rem]">
             ** Currently under development
           </div>
         )}
