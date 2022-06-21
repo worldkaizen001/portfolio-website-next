@@ -5,6 +5,7 @@ import React, { useContext, useState } from "react";
 import { AiOutlineClose as Close } from "react-icons/ai";
 import { PageUrlSm } from "../constants/pageUrl";
 import { AppContext } from "../hooks/AppContext.hook";
+import { INavSm } from "../type/interface";
 
 export default function NavSm() {
   const navigate = useRouter();
@@ -42,7 +43,8 @@ export default function NavSm() {
   );
 }
 
-function SideBar({ display, setDisplay, url, navigate }: any) {
+function SideBar(props: INavSm) {
+  const { display, setDisplay, url, navigate } = props;
   return (
     <div
       className={`menuWrapper z-[100] fixed inset-0 ${
@@ -83,26 +85,29 @@ function SideBar({ display, setDisplay, url, navigate }: any) {
         <ul
           className={`text-[1rem] 2xs:text-[1.1rem] md:text-[1.3rem] font-normal`}
         >
-          {PageUrlSm.map((title: any, index: number) => {
-            const lastIndex = PageUrlSm && PageUrlSm.length - 1;
-            return (
-              <li
-                className={`px-[1.6rem] text-[1.1rem] 2xs:text-[1.2rem] md:text-[1.4rem] py-[2rem] ${
-                  index !== lastIndex && `border-b border-[rgba(7,_7,_7,_0.39)]`
-                } ${title.link === url && "bg-[#e9626215] font-medium"} `}
-                key={index}
-              >
-                <Link href={title.link} passHref={true}>
-                  <span
-                    onClick={() => setDisplay({ ...display, navMenu: false })}
-                    className="focus:bg-[#e9626215] block"
-                  >
-                    {title.name}
-                  </span>
-                </Link>
-              </li>
-            );
-          })}
+          {PageUrlSm.map(
+            (title: { link: string; name: string }, index: number) => {
+              const lastIndex = PageUrlSm && PageUrlSm.length - 1;
+              return (
+                <li
+                  className={`px-[1.6rem] text-[1.1rem] 2xs:text-[1.2rem] md:text-[1.4rem] py-[2rem] ${
+                    index !== lastIndex &&
+                    `border-b border-[rgba(7,_7,_7,_0.39)]`
+                  } ${title.link === url && "bg-[#e9626215] font-medium"} `}
+                  key={index}
+                >
+                  <Link href={title.link} passHref={true}>
+                    <span
+                      onClick={() => setDisplay({ ...display, navMenu: false })}
+                      className="focus:bg-[#e9626215] block"
+                    >
+                      {title.name}
+                    </span>
+                  </Link>
+                </li>
+              );
+            }
+          )}
         </ul>
       </div>
     </div>

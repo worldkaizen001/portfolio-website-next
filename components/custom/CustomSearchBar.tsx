@@ -1,7 +1,7 @@
 import React from "react";
 import { RiSearchLine } from "react-icons/ri";
 
-function SearchBar(props: any) {
+function SearchBar(props: { className: string }) {
   return (
     <div
       className={`relative bg-[#FAFAFA] flex items-center h-full searchBar p-4 rounded-xl ${props.className}`}

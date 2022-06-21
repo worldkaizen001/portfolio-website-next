@@ -11,7 +11,7 @@ export default function Projects() {
         <div className="text-[1.45rem] 2xs:text-[1.6rem] xl:text-[1.8rem] pt-[.3rem] pb-[1.4rem]  font-normal border-b border-white ">
           Projects *
         </div>
-        {projects.map((val, idx) => (
+        {projects?.map((val, idx) => (
           <div
             key={idx}
             className="grid grid-cols-3 justify-between pt-[2.3em] 2xs:pt-[2.5em] md:pt-[2.8em] xl:pt-[3.0rem] pb-[1.8rem] xl:pb-[1.4rem] font-normal border-b border-white "

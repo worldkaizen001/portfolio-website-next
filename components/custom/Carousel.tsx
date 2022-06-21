@@ -1,14 +1,17 @@
 import React, { useRef } from "react";
 import { BsArrowLeftSquare, BsArrowRightSquare } from "react-icons/bs";
+import { ICarousel } from "../type/interface";
 
-export default function Carousel(props: any) {
-  const ref = useRef<any>();
+export default function Carousel(props: ICarousel) {
+  const ref = useRef<HTMLDivElement>(null);
 
   const scrollLeft = () => {
+    if (!ref.current) throw Error("ref is not assigned");
     ref.current.scrollLeft += -props.scrollWidth;
   };
 
   const scrollRight = () => {
+    if (!ref.current) throw Error("ref is not assigned");
     ref.current.scrollLeft += props.scrollWidth;
   };
 

@@ -1,14 +1,17 @@
-import { useRouter } from "next/router";
-import React, { useContext } from "react";
+import { NextRouter, useRouter } from "next/router";
+import React, { useContext, useState } from "react";
 import BasicInput from "../basic/BasicInput";
 import { Modal, ModalBody } from "../basic/BasicModal";
 import { AppContext } from "../hooks/AppContext.hook";
 import { AiOutlineClose as Close } from "react-icons/ai";
 
 export default function CollabModal() {
-  const navigate = useRouter();
+  const navigate: NextRouter = useRouter();
 
   const { display, setDisplay } = useContext(AppContext);
+
+  const [error, setError] = useState(false);
+
   return (
     <Modal>
       <ModalBody
@@ -36,29 +39,34 @@ export default function CollabModal() {
         <BasicInput
           className="py-[.9rem] !border-b mb-[4.1rem]"
           inputStyles="bg-[#F1F1F1]"
-          defaultValue="Fullname"
+          placeholder="Fullname"
         />
         <BasicInput
           className="py-[.9rem] !border-b mb-[4.1rem]"
           inputStyles="bg-[#F1F1F1]"
-          defaultValue="Email Address"
+          placeholder="Email Address"
         />
         <BasicInput
           className="py-[.9rem] !border-b mb-[4.1rem]"
           inputStyles="bg-[#F1F1F1]"
-          defaultValue="heee"
+          placeholder="Type of Project"
         />
         <BasicInput
           className="py-[.9rem] !border-b mb-[6.9rem]"
           inputStyles="bg-[#F1F1F1]"
-          defaultValue="Project Description"
+          placeholder="Project Description"
         />
         <button
-          onClick={() => navigate.push("/home#talk-to-us")}
+          onClick={() => setError(true)}
           className={`ml-[.9rem] px-[1.4rem] py-[.7rem] rounded-[.5rem] text-[1.1rem] border border-[#070707] bg-[#D4D4D4] !cursor-pointer `}
         >
           Send Request
         </button>
+        {error && (
+          <div className="ml-4 mt-6 font-bold text-[1.4rem]">
+            ** Currently under development
+          </div>
+        )}
       </ModalBody>
     </Modal>
   );

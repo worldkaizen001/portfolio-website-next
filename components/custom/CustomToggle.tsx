@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "next/link";
+import { IToggle } from "../type/interface";
 
-export default function CustomToggle(props: any) {
+export default function CustomToggle(props: IToggle) {
   const { data, toggle, className } = props;
 
   return (

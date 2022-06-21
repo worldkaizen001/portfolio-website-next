@@ -1,13 +1,18 @@
 // self.addEventListener("install", function (event) {
 //   console.log("Hello world from the Service Worker 🤙");
 // });
+//
+//
+// currently under development
+//
+//
 
 const CACHE_NAME = "version-1";
 const urlsToCache = ["index.html", "offline.html"];
 
 // install sw
 
-self.addEventListener("install", (event) => {
+self.addEventListener("install", (event: any) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       // console.log("Opened cache");
@@ -19,7 +24,7 @@ self.addEventListener("install", (event) => {
 
 // fetch sw
 
-self.addEventListener("fetch", function (event) {
+self.addEventListener("fetch", function (event: any) {
   event.respondWith(
     caches.match(event.request).then(() => {
       return fetch(event.request).catch(() => caches.match("offline.html"));
@@ -29,9 +34,11 @@ self.addEventListener("fetch", function (event) {
 
 // activate sw
 
-self.addEventListener("activate", function (event) {
+self.addEventListener("activate", function (event: any) {
   // console.log("Hello world from the Service Worker 🤙");
 });
+
+export {};
 
 // Install SW
 // self.addEventListener('install', (event) => {
