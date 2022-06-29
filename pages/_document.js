@@ -11,22 +11,22 @@ export default function Document() {
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="preload"
-          href="https://alsoknownaszac.me/alsoknownaszac.avif"
+          href="https://www.aigbekelvin.tech/alsoknownaszac.avif"
           as="image"
         ></link>
         <link
           rel="preload"
-          href="https://alsoknownaszac.me/blackbg1.avif"
+          href="https://www.aigbekelvin.tech/blackbg1.avif"
           as="image"
         ></link>
         <link
           rel="preload"
-          href="https://alsoknownaszac.me/blackbg2.avif"
+          href="https://www.aigbekelvin.tech/blackbg2.avif"
           as="image"
         ></link>
         <link
           rel="preload"
-          href="https://alsoknownaszac.me/officestup.avif"
+          href="https://www.aigbekelvin.tech/officestup.avif"
           as="image"
         ></link>
         <link
@@ -51,8 +51,8 @@ export default function Document() {
         <link
           rel="search"
           type="application/opensearchdescription+xml"
-          title="Amayo Collins Portfoliow"
-          href="http://alsoknownaszac.me/mysitetitle.xml"
+          title="Aigbe Kelvin Portfolio"
+          href="https://www.aigbekelvin.teche/mysitetitle.xml"
         ></link>
       </Head>
       <body>

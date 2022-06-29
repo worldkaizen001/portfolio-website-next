@@ -45,7 +45,7 @@ export default function HeroSection() {
         <Nav />
         <section className="hero-section mt-[12.6%] xs:mt-[10.6%] lg:mt-[8.6%] xl:mt-[6.6%] relative">
           <h1 className="text-[1.8rem] xs:text-[2.35rem] lg:text-[3.5rem] xl:text-[4.5rem] font-medium text-white opacity-50 mb-[1.2rem]">
-            Frontend Developer
+            Mobile App Developer
           </h1>
           <h1 className="text-[2.65rem] xl:w-[70%] xs:text-[3rem] lg:text-[4.0rem] xl:text-[5.0rem] font-medium text-white">
             Turning Designs to Reality

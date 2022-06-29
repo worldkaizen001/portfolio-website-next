@@ -10,7 +10,7 @@ export default function NavMd() {
     <nav className="hidden pt-[6rem] pb-[3.85rem] border-b border-white xl:grid grid-cols-12 items-center text-white">
       <div className="col-span-3 lg:text-[2.1rem] xl:text-[2.3rem] truncate nav-icon">
         <Link href="/home" passHref={true}>
-          <span>{`/*alsoknownaszac*/`}</span>
+          <span>{`/*Aigbe*/`}</span>
         </Link>
       </div>
       <div className="col-span-6 text-[1.2rem] xl:text-[1.4rem] items-center mx-auto flex font-extralight">

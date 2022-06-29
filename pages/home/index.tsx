@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       }`}
     >
       <Head>
-        <title>Amayo Collins Portfolio</title>
+        <title>Aigbe Kelvin Portfolio</title>
       </Head>
       <CollabModal />
       <HeroSection />
