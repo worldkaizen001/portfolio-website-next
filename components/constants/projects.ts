@@ -3,7 +3,7 @@ export const projects = [
     name: "Spreentar",
     industryType: "Logistics",
     mainStack: "Flutter",
-    link: "https://www.spreentar.com",
+    link: "https://play.google.com/store/search?q=spreentar&c=apps",
     monthBuilt: "Jan.",
     yearBuilt: "2022",
   },
