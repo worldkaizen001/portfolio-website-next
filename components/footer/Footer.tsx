@@ -60,7 +60,7 @@ export default function Footer() {
               href={`mailto:${SocialMediaLinks.Email}`}
             >
               <div className="  text-justify font-medium">
-                mayo16collins@gmail.com
+              aigbekelvin@gmail.com
               </div>
             </a>
           </div>
@@ -71,7 +71,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               href={SocialMediaLinks.Github}
             >
-              <div className="  text-justify font-medium">alsoknownasac</div>
+              <div className="  text-justify font-medium">Aigbe Kelvin</div>
             </a>
           </div>
           <div className="col-span-2 2xs:text-[1.2rem] sm:text-[1.3rem] md:text-[1.4rem] xl:text-[1.5rem] font-medium">
@@ -81,7 +81,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               href={SocialMediaLinks.Linkedin}
             >
-              <div className="  text-justify font-medium">Collins Amayo</div>
+              <div className="  text-justify font-medium">Aigbe Kelvin</div>
             </a>
           </div>
         </div>
