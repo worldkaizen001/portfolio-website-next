@@ -15,10 +15,8 @@ export default function Skills() {
             Technical
           </div>
           <div className="text-[.9rem] 2xs:text-[1.1rem] sm:text-[1.3rem] md:text-[1.6rem] xl:text-[1.8rem] leading-[180%] font-medium">
-            ** NextJS ** ReactJS ** React Hooks ** React Query ** JavaScript **
-            Typescript ** Tailwind CSS ** GraphQl ** GraphCMS ** Rest API **
-            Ajax ** Axios ** Jest ** Yarn ** NodeJS ** Git ** Github **
-            Bootstrap ** MaterialUi ** Html 5 ** CSS 3
+            ** Dart ** Flutter ** Firebase ** Rest API ** Git ** Github **
+            
           </div>
         </div>
         <div className="col-span-4 lg:hidden"></div>
