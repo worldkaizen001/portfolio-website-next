@@ -16,7 +16,7 @@ export default function Skills() {
           </div>
           <div className="text-[.9rem] 2xs:text-[1.1rem] sm:text-[1.3rem] md:text-[1.6rem] xl:text-[1.8rem] leading-[180%] font-medium">
             ** Dart ** Flutter ** Firebase ** Rest API ** Git ** Github **
-            
+            Pub.dev package creator
           </div>
         </div>
         <div className="col-span-4 lg:hidden"></div>
