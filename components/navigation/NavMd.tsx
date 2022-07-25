@@ -24,14 +24,14 @@ export default function NavMd() {
       </div>
       <div className="col-span-1"></div>
       <div className="col-span-2 text-[1.2rem] xl:text-[1.4rem] ml-auto">
-        <button
-          onClick={() => setDisplay({ ...display, modal: true })}
+        <Link
+          href="https://wa.me/2347067582810"
           className={
             "px-[1.9rem] py-[.95rem] rounded-[.8rem] border border-white !cursor-pointer "
           }
         >
           Lets Talk
-        </button>
+        </Link>
       </div>
     </nav>
   );

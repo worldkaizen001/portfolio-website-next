@@ -37,8 +37,7 @@ export default function Footer() {
           </div>
           <button
             onClick={() => {
-              setDisplay({ ...display, navMenu: false, modal: true });
-              navigate.push("/home#colaborate");
+              navigate.push("https://wa.me/2347067582810");
             }}
             className={
               "px-[1.9rem] py-[.95rem] text-[.95rem] 2xs:text-[1.15rem] sm:text-[1.28rem] md:text-[1.4rem] xl:text-[1.5rem] rounded-[8px] border border-white !cursor-pointer "

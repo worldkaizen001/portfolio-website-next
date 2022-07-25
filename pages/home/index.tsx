@@ -22,7 +22,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Aigbe Kelvin Portfolio</title>
       </Head>
-      <CollabModal />
+      {/* <CollabModal /> */}
       <HeroSection />
       <Skills />
       <AboutMe />
