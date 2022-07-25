@@ -217,3 +217,15 @@ a {
     scroll-behavior: smooth;
   }
 }
+
+@media (min-width: 567px){
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+}
+
+@media (min-width: 767px){
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+}
