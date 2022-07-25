@@ -8,13 +8,13 @@ export default function Packages() {
       className="packages bg-[#e5e7eb] pt-[3.3rem] 2xs:pt-[4.4rem] sm:pt-[5.5rem] md:pt-[6.6rem] xl:pt-[7.7rem] pb-[7.6rem] 2xs:pb-[7.8rem] sm:pb-[10.8rem] xl:pb-[13.7rem]"
     >
       <div className="container ">
-        <div className="text-[1.45rem] 2xs:text-[1.6rem] xl:text-[1.8rem] pt-[.3rem] pb-[1.4rem]  font-normal border-b border-white ">
+        <div className="text-[1.45rem] 2xs:text-[1.6rem] xl:text-[1.8rem] pt-[.3rem] pb-[1.4rem]  font-normal border-b  ">
           Packages *
         </div>
         {packages?.map((val, idx) => (
           <div
             key={idx}
-            className="grid grid-cols-3 justify-between pt-[2.3em] 2xs:pt-[2.5em] md:pt-[2.8em] xl:pt-[3.0rem] pb-[1.8rem] xl:pb-[1.4rem] font-normal border-b border-white "
+            className="grid grid-cols-1 sm:grid-cols-3 justify-between pt-[2.3em] 2xs:pt-[2.5em] md:pt-[2.8em] xl:pt-[3.0rem] pb-[1.8rem] xl:pb-[1.4rem] font-normal border-b  "
           >
             <div className="">
               <span className=" text-[1rem] 2xs:text-[1.1rem] sm:text-[1.25rem] md:text-[1.48rem] xl:text-[1.6rem] font-semibold">
