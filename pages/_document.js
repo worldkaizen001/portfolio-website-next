@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <meta
           name="description"
-          content="A portolio website of an outgoing developer who goes under the alias @alsoknownaszac"
+          content="A portolio website of an outgoing developer called Kaizen"
         />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">

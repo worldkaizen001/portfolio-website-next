@@ -4,6 +4,7 @@ import Head from "next/head";
 import Skills from "../../components/skills/Skills";
 import AboutMe from "../../components/about-me/AboutMe";
 import Projects from "../../components/projects/Projects";
+import Packages from "../../components/packages/Packages";
 import Footer from "../../components/footer/Footer";
 import HeroSection from "../../components/hero-section/HeroSection";
 import { AppContext } from "../../components/hooks/AppContext.hook";
