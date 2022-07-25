@@ -9,11 +9,10 @@ export default function Document() {
           content="A portolio website of an outgoing developer who goes under the alias @alsoknownaszac"
         />
         <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="preload"
-          href="https://www.aigbekelvin.tech/alsoknownaszac.avif"
-          as="image"
-        ></link>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
         <link
           rel="preload"
           href="https://www.aigbekelvin.tech/blackbg1.avif"
@@ -29,6 +28,7 @@ export default function Document() {
           href="https://www.aigbekelvin.tech/officestup.avif"
           as="image"
         ></link>
+        
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
