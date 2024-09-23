@@ -14,9 +14,9 @@ export default function Skills() {
           <div className="2xs:mb-[.6rem] lg:mb-[1rem] text-[1.15rem] 2xs:text-[1.3rem] sm:text-[1.7rem] md:text-[2.1rem] xl:text-[2.5rem] opacity-40">
             Technical
           </div>
-          <div className="text-[.9rem] 2xs:text-[1.1rem] sm:text-[1.3rem] md:text-[1.6rem] xl:text-[1.8rem] leading-[180%] font-medium">
-            ** Dart ** Flutter ** Firebase ** Rest API ** Git ** Github **
-            Pub.dev package creator
+          <div className="text-[.9rem] 2xs:text-[1.1rem] sm:text-[1.3rem] md:text-[1.3rem] xl:text-[1.5rem] leading-[180%] font-medium">
+            ** Dart ** JavaScript ** Flutter ** Node Js ** Nest Js ** Firebase ** Rest API ** Git ** Github ** CI/CD ** CodeMagic ** GitHub Actions **
+
           </div>
         </div>
         <div className="col-span-4 lg:hidden"></div>
@@ -24,7 +24,7 @@ export default function Skills() {
           <div className="2xs:mb-[.6rem] lg:mb-[1rem] text-[1.15rem] 2xs:text-[1.3rem] sm:text-[1.7rem] md:text-[2.1rem] xl:text-[2.5rem]  opacity-40">
             Soft
           </div>
-          <div className="text-[.9rem] 2xs:text-[1.1rem] sm:text-[1.3rem] md:text-[1.6rem] xl:text-[1.8rem] leading-[180%] font-medium">
+          <div className="text-[.9rem] 2xs:text-[1.1rem] sm:text-[1.3rem] md:text-[1.6rem] xl:text-[1.5rem] leading-[180%] font-medium">
             ** Collaboration and Team work ** Ability to learn quick **
             Analytical Skills ** Communication.
           </div>

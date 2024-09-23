@@ -12,7 +12,7 @@ export default function AboutMe() {
           <div className="mb-[1rem] text-[1.6rem] 2xs:text-[2.2rem] sm:text-[2.8rem] md:text-[3.4rem] xl:text-[5rem] opacity-40 font-light">
             About me
           </div>
-          <div className="text-[1rem] 2xs:text-[1.2rem] sm:text-[1.4rem] md:text-[1.6rem] xl:text-[1.8rem] leading-[207%] font-medium ">
+          <div className="text-[1rem] 2xs:text-[1.2rem] sm:text-[1.4rem] md:text-[1.3rem] xl:text-[1.7rem] leading-[207%] font-medium ">
             {about}
           </div>
         </div>
