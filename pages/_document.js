@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <meta
           name="description"
-          content="A portolio website of an outgoing developer called Kaizen"
+          content="A portolio website of Aigbe Kelvin"
         />
         <link rel="icon" href="/favicon.ico"></link>
         <link
