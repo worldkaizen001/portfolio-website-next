@@ -11,7 +11,7 @@ import { AppContext } from "../../components/hooks/AppContext.hook";
 import CollabModal from "../../components/collaborate/CollabModal";
 
 const Home: NextPage = () => {
-  const { display } = useContext(AppContext);
+  const { display } = useContext(AppContext) as { display: { navMenu: boolean; modal: boolean } };
 
   return (
     <div
