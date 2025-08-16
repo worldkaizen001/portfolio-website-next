@@ -20,7 +20,7 @@ export const projects = [
     industryType: "Entertainment",
     mainStack: "Flutter",
     link: "https://recentpost.com/",
-    monthBuilt: "February",
+    monthBuilt: "Feb",
     yearBuilt: "2025",
   },
   
@@ -29,7 +29,7 @@ export const projects = [
     industryType: "Health Insurance",
     mainStack: "Flutter",
     link: "https://play.google.com/store/apps/details?id=com.goziri.app",
-    monthBuilt: "August",
+    monthBuilt: "Aug",
     yearBuilt: "2024",
   },
   {
