@@ -4,7 +4,7 @@ import "tailwindcss/tailwind.css";
 import { useEffect, useMemo, useState } from "react";
 import { AppContext } from "../components/hooks/AppContext.hook";
 
-function MyApp({ Component, pageProps }: AppProps) {
+export default function MyApp({ Component, pageProps }: AppProps) {
   const [display, setDisplay] = useState({
     modal: false,
     navMenu: false,
@@ -12,23 +12,13 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   const displayValue = useMemo(
     () => ({ display, setDisplay }),
-    [display, setDisplay]
+    [display]
   );
 
   useEffect(() => {
     if ("serviceWorker" in navigator) {
-      window.addEventListener("load", function () {
-        navigator.serviceWorker.register("/sw.ts").then(
-          function (registration) {
-            console.log(
-              "Service Worker registration successful with scope: ",
-              registration.scope
-            );
-          },
-          function (err) {
-            console.log("Service Worker registration failed: ", err);
-          }
-        );
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("/sw.ts").catch(console.error);
       });
     }
   }, []);
@@ -39,5 +29,3 @@ function MyApp({ Component, pageProps }: AppProps) {
     </AppContext.Provider>
   );
 }
-
-export default MyApp;

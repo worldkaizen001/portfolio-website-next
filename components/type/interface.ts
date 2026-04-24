@@ -1,6 +1,13 @@
-import { NextRouter } from "next/router";
+import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
+import React from "react";
+// import { AppRouterInstance } from "next/navigation";
+// 
 
-//Basic
+// import { AppRouterInstance } from "next/navigation";
+
+// =====================
+// BASIC COMPONENT TYPES
+// =====================
 
 export interface IBasicButton {
   className?: string;
@@ -49,12 +56,14 @@ export interface IBasicSelect {
   name?: string;
   multiple?: boolean;
   size?: number;
-  itemData: [];
+  itemData: any[];
   onChange?: React.ChangeEventHandler<HTMLSelectElement>;
   onClick?: React.MouseEventHandler<HTMLSelectElement>;
 }
 
-//modal
+// =====================
+// MODAL TYPES (FIXED)
+// =====================
 
 export interface IBasicModal {
   children: React.ReactNode;
@@ -62,32 +71,26 @@ export interface IBasicModal {
 
 export interface IBasicModalBtn {
   children: React.ReactNode;
-  open: { modal: boolean };
-  setOpen: React.Dispatch<
-    React.SetStateAction<{
-      modal: boolean;
-    }>
-  >;
+  open: boolean;
+  setOpen: (value: boolean) => void;
 }
 
 export interface IBasicModalBody {
-  className?: string | undefined;
+  className?: string;
   children: React.ReactNode;
-  open: { modal: boolean };
-  setOpen: React.Dispatch<
-    React.SetStateAction<{
-      modal: boolean;
-    }>
-  >;
-  navigate: NextRouter;
+  open: boolean;
+  setOpen: (value: boolean) => void;
+  navigate: AppRouterInstance;
 }
 
 export interface IBasicModalContent {
-  className?: string | undefined;
+  className?: string;
   children: React.ReactNode;
 }
 
-//hero section
+// =====================
+// HERO SECTION
+// =====================
 
 export interface ISocials {
   link: {
@@ -97,7 +100,9 @@ export interface ISocials {
   };
 }
 
-//custom
+// =====================
+// CUSTOM COMPONENTS
+// =====================
 
 export interface IToggle {
   data: Array<{ link: string; name: string }>;
@@ -111,23 +116,31 @@ export interface ICarousel {
   children: React.ReactNode;
 }
 
-//layout
+// =====================
+// LAYOUT
+// =====================
 
 export interface ILayout {
   className: string;
   children: React.ReactNode;
 }
 
-//nav
+// =====================
+// NAVIGATION (FIXED)
+// =====================
+
 
 export interface INavSm {
-  url: string;
-  display: { modal: boolean; navMenu: boolean };
+  display: {
+    modal: boolean;
+    navMenu: boolean;
+  };
   setDisplay: React.Dispatch<
     React.SetStateAction<{
       modal: boolean;
       navMenu: boolean;
     }>
   >;
-  navigate: NextRouter;
+  url: string;
+  navigate: AppRouterInstance;
 }
