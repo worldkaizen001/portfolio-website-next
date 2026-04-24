@@ -1,5 +1,13 @@
 export const projects = [
   {
+    name: "Greatiby",
+    industryType: "Finance",
+    mainStack: "Flutter",
+    link: "https://apps.apple.com/ng/app/greatiby/id6752526114",
+    monthBuilt: "DEC",
+    yearBuilt: "2025",
+  },
+  {
     name: "Exponential",
     industryType: "Entertainment",
     mainStack: "Flutter",
@@ -23,7 +31,7 @@ export const projects = [
     monthBuilt: "Feb",
     yearBuilt: "2025",
   },
-  
+
   {
     name: "Goziri",
     industryType: "Health Insurance",
@@ -49,7 +57,7 @@ export const projects = [
     monthBuilt: "July",
     yearBuilt: "2023",
   },
- 
+
   {
     name: "Todoor Logistics",
     industryType: "Logistics",
@@ -66,7 +74,7 @@ export const projects = [
     monthBuilt: "April",
     yearBuilt: "2023",
   },
-  
+
   {
     name: "Spreentar",
     industryType: "Logistics",
